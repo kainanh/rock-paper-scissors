@@ -19,15 +19,19 @@
     <input type="image" src="./paper.png" onclick="gameRound(event)" value="Paper"></input>
     <input type="image" src="./scissors.png" onclick="gameRound(event)" value="Scissors"></input>
     </div>
+    <p class="info">First to 5 wins!</p>
     <div class="divider"></div>
     <div class="scores">
         <div class="player">
             <p>PLAYER 1: <span id="playerWeapon">?</span></p>
-            <div id="player-weapon-img"></div>
+            <input type="image" src="" id="player-weapon-img" alt=""></input>
+            <p class="score">SCORE: <span id="player-score">0</span></p>
         </div>
+        <div id="result"></div>
         <div class="computer">
-            <p>COMPUTER: <span id="computerWeapon">?</span></p>
-            <div id="computer-weapon-img"></div>
+            <p class="computer-choice">COMPUTER: <span id="computerWeapon">?</span></p>
+            <input type="image" src="" id="computer-weapon-img" alt=""></input>
+            <p class="score">SCORE: <span id="computer-score">0</span></p>
         </div>
     </div>
 </body>
