@@ -6,6 +6,8 @@ body{
     background-color: rgb(95, 95, 95);
     font-family: 'Press Start 2P', system-ui;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -13,6 +15,10 @@ header{
     background-color: rgb(110, 110, 110);
     font-size: 46px;
     color: rgb(85, 255, 0);
+}
+
+.main{
+    flex: 1;
 }
 
 p{
@@ -113,4 +119,22 @@ img {
     font-family: 'Press Start 2P', system-ui;
     background-color: rgb(241, 241, 20);
     border: 3px solid black;
+    cursor: pointer;
 }
+
+i{
+    color: black;
+}
+
+footer{
+    background-color: rgb(110, 110, 110);
+    padding: 6px;
+}
+
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+

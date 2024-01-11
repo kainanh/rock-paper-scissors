@@ -37,8 +37,8 @@ function gameRound(event){
 
 
     //This updates the results and includes he game logic
-  
-    if(playerSelection == computerSelection){
+    if(playerScore < 5 && computerScore < 5){
+        if(playerSelection == computerSelection){
         document.getElementById("result").textContent = "Great minds think alike. This round ends in a draw"
     } else if(playerSelection == 'Rock' && computerSelection == 'Scissors'){
         playerScore += 1
@@ -57,6 +57,8 @@ function gameRound(event){
         document.getElementById("computer-score").textContent = computerScore
         document.getElementById("result").textContent = "Wow the computer is living in your head rent free buddy. You lost this round"
     }
+    }
+    
     
     
     //Create button to be able to restart the game once it ends by reloading the page.
