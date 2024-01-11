@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* *{
+    border: 2px solid red;
+} */
+
+body{
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(95, 95, 95);
+}
+
+header,
+p{
+    font-family: 'Press Start 2P', system-ui;
+    text-align: center;
+}
+
+header{
+    padding: 36px;
+    background-color: rgb(110, 110, 110);
+    font-size: 46px;
+    color: rgb(85, 255, 0);
+}
+
+p{
+    font-size: 10px;
+    color: #2bc800;
+    margin-bottom: 15px;
+}
+
+.weapon{
+    color: #ff0000;
+    text-decoration: underline;
+    font-size: 16px;
+    margin: 5px 0px
+}
+.description{
+    padding: 25px;
+}
+
+input{
+    width: 175px;
+    height: 175px;
+    border: 2px solid #2bc800;
+    border-radius: 10px;
+}
+
+input:hover{
+    box-shadow: 0 0 50px 10px #2bc800;
+}
+
+img {
+    width: 175px;
+    height: 175px;
+}
+
+.weapon-selection{
+    padding: 40px;
+    gap: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider{
+    border: 0.5px solid rgb(87, 87, 87);
+    width: 500px;
+    margin: 0 auto;
+}
+
+.player-selection{
+    color: black;
+    font-size: 30px;
+}
+
+.scores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 400px
+}
+

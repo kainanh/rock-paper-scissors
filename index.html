@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Rock, Paper, Scissors</title>
 </head>
 <body>
     <script src="index.js"></script>
-    <header>Rock Paper Scissors</header>
-    <button onclick="gameRound(event)" value="Rock">Rock</button>
-    <button onclick="gameRound(event)" value="Paper">Paper</button>
-    <button onclick="gameRound(event)" value="Scissors">Scissors</button>
+    <header>Rock, Paper, Scissors</header>
+    <div class="description">
+        <p>The majority believe that this is a game of chance. Ha! What fools.</p>
+    <p>But few recognise the skillset required to be a champion in such an elite sport.</p>
+    </div>
+    <p class="weapon">So choose your weapon wisely...</p>
+    <div class="weapon-selection">
+    <input type="image" src="./rock.png" onclick="gameRound(event)" value="Rock"></input>
+    <input type="image" src="./paper.png" onclick="gameRound(event)" value="Paper"></input>
+    <input type="image" src="./scissors.png" onclick="gameRound(event)" value="Scissors"></input>
+    </div>
+    <div class="divider"></div>
+    <div class="scores">
+        <div class="player">
+            <p>PLAYER 1: <span id="playerWeapon">?</span></p>
+            <div id="player-weapon-img"></div>
+        </div>
+        <div class="computer">
+            <p>COMPUTER: <span id="computerWeapon">?</span></p>
+            <div id="computer-weapon-img"></div>
+        </div>
+    </div>
 </body>
 </html>

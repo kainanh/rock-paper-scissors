@@ -9,6 +9,10 @@ function getComputerChoice(){
 function gameRound(event){
     let playerSelection = event.target.value
     let computerSelection = getComputerChoice()
+    
+    document.getElementById("playerWeapon").textContent = playerSelection.toUpperCase()
+    
+    document.getElementById("computerWeapon").textContent = computerSelection.toUpperCase()
 
     if(playerSelection == computerSelection){
         console.log("Great minds think alike. This round ends in a draw")
